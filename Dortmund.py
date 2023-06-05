@@ -96,8 +96,8 @@ class MyWindow(QMainWindow):
     def alert(self, contact, message):
 
 
-        account_sid = 'AC0bc76f93de84c2e6833d3c86a0ab303e'
-        auth_token = 'e8024481736f29d042734fdc87016f46'
+        account_sid = 'twilio_account_sid'
+        auth_token = 'twilio_auth_token'
         client = Client(account_sid, auth_token)
 
         message = client.messages.create(
